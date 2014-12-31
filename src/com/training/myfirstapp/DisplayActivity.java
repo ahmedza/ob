@@ -20,7 +20,7 @@ public class DisplayActivity extends Activity {
 	public boolean onCreateOptionsMenu(Menu menu) {
 		System.out.println("In Options Display");
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
+		getMenuInflater().inflate(R.menu.main_first, menu);
 		return true;
 	}
 

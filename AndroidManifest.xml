@@ -5,14 +5,15 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="11"
-        android:targetSdkVersion="18" />
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18"
+        android:maxSdkVersion="21" />
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/pictuary_bg"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/MyActionBar" >
         <activity
             android:name="com.training.myfirstapp.MainFirstActivity"
             android:label="@string/app_name" >

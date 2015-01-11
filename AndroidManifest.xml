@@ -11,7 +11,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/pictuary_bg"
+        android:icon="@drawable/actionbar_pictuary"
         android:label="@string/app_name"
         android:theme="@style/MyActionBar" >
         <activity

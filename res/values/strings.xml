@@ -9,5 +9,6 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="signup">Signup For Free</string>
     <string name="login">Login</string>
-
+	<string name="login_fb">Login with facebook</string>
+	<string name="signup_fb">Signup with facebook</string>
 </resources>

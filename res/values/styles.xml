@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!--
         Base application theme, dependent on API level. This theme is replaced
@@ -16,5 +16,19 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
+    
+    <style name="TextFieldFont" parent="@android:style/Widget.TextView">
+          <item name="android:background">#1E1921</item>        
+          <item name="android:textColor">#A85E4F</item>
+          <item name="android:textColorLink">#FFBC4F</item>
+          <item name="android:typeface">monospace</item>
+     </style>
 
+     <style name="FootMenuImageView" parent="@android:style/Widget.ImageButton">
+          <item name="android:background">#1E1921</item>        
+          <item name="android:textColor">#A85E4F</item>
+          <item name="android:textColorLink">#FFBC4F</item>
+          <item name="android:typeface">monospace</item>
+     </style>
+    
 </resources>

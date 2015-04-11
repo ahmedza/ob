@@ -1,9 +1,37 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
 
-    <item
-        android:id="@+id/action_settings"
+   <item
+        android:id="@+id/action_about"
+        android:orderInCategory="90"
+        android:showAsAction="ifRoom"
+        android:title="Search"
+        android:icon="@drawable/ic_action_about"/>
+   <item
+        android:id="@+id/action_overflow_menu"
         android:orderInCategory="100"
-        android:showAsAction="never"
-        android:title="@string/action_settings"/>
-
+        android:showAsAction="ifRoom"
+        android:title="Categories" android:icon="@drawable/ic_action_overflow">
+       <menu>
+           
+           <item android:id="@+id/ob_home" android:title="Home" android:titleCondensed="Hom"/>
+	           <group android:id="@+id/group_categories">
+	               <item android:id="@+id/Clothing" android:title="Clothing">
+						<menu>
+					    	<group android:id="@+id/group_clothing_main">
+					        	<item android:id="@+id/men_lothing" android:title="Men Clothing" />
+					            <item android:id="@+id/women_clothing" android:title="Women-Clothing" />
+							</group>
+						</menu>
+					</item>
+	               <item android:id="@+id/electronics" android:title="Electronics">
+						<menu>
+					    	<group android:id="@+id/group_elec">
+					        	<item android:id="@+id/tv" android:title="TV" />
+					            <item android:id="@+id/refrigerator" android:title="Refrigerator" />
+							</group>
+						</menu>
+					</item>
+	           </group>
+       </menu>
+   </item>
 </menu>

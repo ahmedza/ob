@@ -6,15 +6,17 @@
 
     <uses-sdk
         android:minSdkVersion="16"
-        android:targetSdkVersion="22"/>
+        android:targetSdkVersion="22" />
 
-<!--    	<permission
+    <!--
+        	<permission
         android:name="com.parse.anywall.permission.MAPS_RECEIVE"
         android:protectionLevel="signature" >
     </permission>
 
     <uses-permission android:name="com.parse.anywall.permission.MAPS_RECEIVE" />
- -->    <uses-permission android:name="android.permission.INTERNET" />
+    -->
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <!-- <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" /> -->
@@ -24,8 +26,7 @@
     
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     -->
-    
-    
+
     <application
         android:name=".Application"
         android:allowBackup="true"
@@ -33,7 +34,7 @@
         android:label="@string/app_name"
         android:theme="@style/MyActionBar" >
         <activity
-            android:name="com.onebridge.activities.MainFirstActivity"
+            android:name=".MainFirstActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -41,16 +42,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
         <activity
-            android:name="com.onebridge.activities.CategoryActivity"
-            android:label="@string/title_activity_category" 
-            android:parentActivityName="com.onebridge.activities.MainFirstActivity">
-            <meta-data 
+            android:name=".CategoryActivity"
+            android:label="@string/title_activity_category"
+            android:parentActivityName=".MainFirstActivity" >
+            <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.onebridge.activities.MainFirstActivity"/>
+                android:value="com.onebridge.activities.MainFirstActivity" />
         </activity>
-        
+        <activity
+            android:name=".ProductActivity"
+            android:label="@string/title_activity_product"
+            android:parentActivityName=".CategoryActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.onebridge.activities.CategoryActivity" />
+        </activity>
     </application>
 
 </manifest>

@@ -12,13 +12,15 @@
     <string name="signup">Signup For Free</string>
     <string name="hint_serach_categories">Search Categories</string>
     <string name="login">Login</string>
-	<string name="login_fb">Login with facebook</string>
-	<string name="signup_fb">Signup with facebook</string>
-	<string name="home_menu">Home</string>
-	
-	<!-- Activity Titles -->
-	
-	
-	<!-- TextField Defaults -->
-	
+    <string name="login_fb">Login with facebook</string>
+    <string name="signup_fb">Signup with facebook</string>
+    <string name="home_menu">Home</string>
+
+    <!-- Activity Titles -->
+
+
+    <!-- TextField Defaults -->
+
+    <string name="title_activity_product">ProductActivity</string>
+
 </resources>

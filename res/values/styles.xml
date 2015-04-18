@@ -18,17 +18,31 @@
     </style>
     
     <style name="TextFieldFont" parent="@android:style/Widget.TextView">
-          <item name="android:background">#1E1921</item>        
-          <item name="android:textColor">#A85E4F</item>
-          <item name="android:textColorLink">#FFBC4F</item>
-          <item name="android:typeface">monospace</item>
+          <item name="android:background">@color/Color_lightblue</item>        
+          <item name="android:textColor">@color/color_grey</item>
+          <item name="android:textColorLink">@color/color_grey</item>
+          <item name="android:typeface">normal</item>
+          <item name="android:textSize">18sp</item>
+          <item name="android:gravity">center_horizontal|center_vertical</item>
      </style>
 
      <style name="FootMenuImageView" parent="@android:style/Widget.ImageButton">
           <item name="android:background">#1E1921</item>        
           <item name="android:textColor">#A85E4F</item>
-          <item name="android:textColorLink">#FFBC4F</item>
-          <item name="android:typeface">monospace</item>
+          <item name="android:textColorLink">#FFFFFF</item>
+          <item name="android:typeface">sans</item>
      </style>
-    
+<color name="Color_orange">#ff8a00</color>
+<color name="Color_redorange">#ff4444</color>
+<color name="Color_blue">#50c0e9</color>
+<color name="Color_lightblue">#8ad5f0</color>
+<color name="Color_purple">#cf9fe7</color>
+<color name="Color_green1">#92c500</color>
+<color name="Color_green2">#a8d324</color>
+<color name="Color_10">#6e6e6e</color>
+<color name="Color_11">#d8d8d8</color>
+<color name="Color_white">#ffffff</color>
+<color name="color_grey">#A4A4A4</color>
+     
+     
 </resources>

@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent" 
-    android:background="@drawable/actionbar_background"
+    
     >
 
      <ImageView
@@ -17,15 +17,14 @@
         android:src="@drawable/ic_launcher"
         android:contentDescription="@string/title_item_CatgoryImage" />
 
-     
     <TextView
         android:id="@+id/categoryTextVw"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-		android:textSize="12sp"
+        android:layout_alignBottom="@+id/imageView1"
         android:layout_centerHorizontal="true"
-        android:ems="10" 
         android:textAppearance="@style/TextFieldFont"
-        />
+        android:textSize="18sp"
+        android:layout_margin="5sp" />
      	  
 </RelativeLayout>

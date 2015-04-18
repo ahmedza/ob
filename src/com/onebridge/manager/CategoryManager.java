@@ -65,7 +65,7 @@ public class CategoryManager {
 	}
 	
 	
-	public static CategoryManager getCategoryManager(){
+	public static CategoryManager getCatManager(){
 		if(catManager == null){
 			catManager = new CategoryManager();
 		}

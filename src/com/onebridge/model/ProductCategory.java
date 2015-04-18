@@ -11,4 +11,10 @@ public class ProductCategory extends ParseObject {
 		    return ParseQuery.getQuery(ProductCategory.class);
 		  }
 
+	  
+	  @Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return this.getString("productCategoryName");
+	}
 }

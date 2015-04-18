@@ -3,7 +3,6 @@ package com.onebridge.manager;
 import java.util.ArrayList;
 import java.util.List;
 
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.SubMenu;
 
@@ -14,7 +13,7 @@ public class MenuLoader {
 	public List<MenuItem> fetchMenuItems(SubMenu menu){
 		List<MenuItem> menuItems = new  ArrayList<MenuItem>();
 		
-		List<ProductCategory> cats= DataManager.getDataManager().fetchMenuItems();
+		List<ProductCategory> cats= DataManager.getDataManager().fetchProductCategories();
 		
 		addRoot(menu, cats, 0);
 		

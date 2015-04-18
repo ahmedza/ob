@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="14"
+        android:minSdkVersion="16"
         android:targetSdkVersion="22"/>
 
 <!--    	<permission
@@ -42,14 +42,14 @@
             </intent-filter>
         </activity>
         
-<!--         <activity
-            android:name="com.training.myfirstapp.DisplayActivity"
-            android:label="@string/title_activity_main" 
-            android:parentActivityName="com.training.myfirstapp.MainFirstActivity">
+        <activity
+            android:name="com.onebridge.activities.CategoryActivity"
+            android:label="@string/title_activity_category" 
+            android:parentActivityName="com.onebridge.activities.MainFirstActivity">
             <meta-data 
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.training.myfirstapp.MainFirstActivity"/>
-        </activity> -->
+                android:value="com.onebridge.activities.MainFirstActivity"/>
+        </activity>
         
     </application>
 

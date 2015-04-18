@@ -1,11 +1,7 @@
 package com.onebridge.manager;
 
-import java.util.ArrayList;
 import java.util.List;
 
-import android.view.MenuItem;
-
-import com.onebridge.exception.DataException;
 import com.onebridge.model.ProductCategory;
 import com.parse.ParseException;
 import com.parse.ParseQuery;
@@ -16,7 +12,7 @@ public class DataManager {
 
 	private static DataManager dataManager= null;
 	
-	public List<ProductCategory> fetchMenuItems(){
+	protected List<ProductCategory> fetchProductCategories(){
 		/*List<MenuItem> menuItems = new  ArrayList<MenuItem>();*/
 		
 		ParseQuery<ProductCategory> categories= ProductCategory.getQuery();
@@ -33,7 +29,7 @@ public class DataManager {
 	}
 	
 	
-	static DataManager getDataManager(){
+	protected static DataManager getDataManager(){
 		
 		if(dataManager == null){
 			dataManager = new DataManager();

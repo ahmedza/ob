@@ -10,7 +10,7 @@
         android:id="@+id/action_overflow_menu"
         android:orderInCategory="100"
         android:showAsAction="ifRoom"
-        android:title="Categories" android:icon="@drawable/ic_action_overflow" >
+        android:title="main-menu" android:icon="@drawable/ic_action_overflow" >
        <menu>
            <item android:id="@+id/item_home" android:title="Home" android:icon="@drawable/ic_action_home"/>
            <item android:id="@+id/item_Categories" android:title="Categories" android:icon="@drawable/ic_drawer">

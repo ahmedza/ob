@@ -4,10 +4,6 @@ import com.parse.ConfigCallback;
 import com.parse.ParseConfig;
 import com.parse.ParseException;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 public class ConfigHelper {
   private ParseConfig config;
   private long configLastFetchedTime;

@@ -1,16 +1,17 @@
 package com.onebridge.activities;
 
 
-import com.onebridge.manager.MenuLoader;
-
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.SubMenu;
 import android.view.View;
+
+import com.onebridge.manager.MenuLoader;
 
 public class MainFirstActivity extends Activity {
 
@@ -36,12 +37,19 @@ public class MainFirstActivity extends Activity {
         return true;
     }
     
-/*    @Override
-    public boolean onPrepareOptionsMenu(Menu menu) {
+    @Override
+    public boolean onMenuItemSelected(int featureId, MenuItem item) {
     	// TODO Auto-generated method stub
-    	new MenuLoader().fetchMenuItems(menu, R.id.item_Categories, R.id.group_cats);
-    	return super.onPrepareOptionsMenu(menu);
-    }*/
+    	boolean val = super.onMenuItemSelected(featureId, item);
+    	return val; /*super.onMenuItemSelected(featureId, item);*/
+    }
+        
+    public void loadCategoryScreen(View view){
+    	Intent intent = new Intent(this, CategoryActivity.class);
+    	/*String msg = ((EditText)(findViewById(R.id.edit_message))).getText().toString();
+    	intent.putExtra("MESSAGE", msg);*/
+    	startActivity(intent);
+    }
     
     @SuppressLint("NewApi") 
     public void openFriends(View view){    	

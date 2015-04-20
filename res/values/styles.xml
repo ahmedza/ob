@@ -23,7 +23,8 @@
           <item name="android:textColorLink">@color/color_grey</item>
           <item name="android:typeface">normal</item>
           <item name="android:textSize">18sp</item>
-          <item name="android:gravity">center_horizontal|center_vertical</item>
+          <item name="android:gravity">bottom|start</item>
+          <item name="android:ems">100</item>
      </style>
 
      <style name="FootMenuImageView" parent="@android:style/Widget.ImageButton">

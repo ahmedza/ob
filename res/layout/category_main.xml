@@ -2,15 +2,17 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/Color_11"
     android:gravity="center_horizontal" >
 
     <SearchView
         android:id="@+id/txSearchVw"
-        android:layout_width="280dp"
+        android:layout_width="280sp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="5dp"
         android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/Color_white"
         android:queryHint="@string/hint_serach_categories" >
 
         <requestFocus />
@@ -18,11 +20,14 @@
     
     <ListView
         android:id="@+id/catsList"
-        android:layout_width="280dp"
+        android:layout_width="280sp"
         android:layout_height="wrap_content"
         android:layout_below="@id/txSearchVw"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp" >
+        android:layout_marginTop="30dp"
+        
+        android:textAlignment="gravity" >
+
     </ListView>
 
 

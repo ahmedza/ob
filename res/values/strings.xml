@@ -23,4 +23,15 @@
 
     <string name="title_activity_product">ProductActivity</string>
 
+    <!-- Arrays -->
+    <string-array name="country_code">
+        <item>+92</item>
+        <item>+971</item>
+        <item>+961</item>
+        <item>+44</item>
+        <item>+66</item>
+    </string-array>
+
+    <string name="title_activity_account_info">Account Info</string>
+
 </resources>

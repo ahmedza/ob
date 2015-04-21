@@ -16,6 +16,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.onebridge.activities.account.AccountInfo;
 import com.onebridge.manager.MenuLoader;
 
 public class MainFirstActivity extends Activity {
@@ -48,6 +49,10 @@ public class MainFirstActivity extends Activity {
     public boolean onMenuItemSelected(int featureId, MenuItem item) {
     	// TODO Auto-generated method stub
     	boolean val = super.onMenuItemSelected(featureId, item);
+    	if(item.getItemId() == R.id.item_account_info){
+    		Intent intent = new Intent(this,AccountInfo.class);
+    		startActivity(intent);
+    	}
     	return val; /*super.onMenuItemSelected(featureId, item);*/
     }
         

@@ -12,7 +12,7 @@ public class AccountInfo extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.account_personal_info);
+		setContentView(R.layout.account_personal_info_grid);
 	}
 
 	@Override
